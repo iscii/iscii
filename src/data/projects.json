@@ -1,0 +1,10 @@
+{
+    "plannr": {
+        "name": "Plannr",
+        "desc": "A super cool trip planner",
+        "img": "/assets/images/projects/plannr.png",
+        "link": "http://plannr-app.vercel.app",
+        "repo": "https://github.com/g00gol/plannr",
+        "featured": true
+    }
+}
