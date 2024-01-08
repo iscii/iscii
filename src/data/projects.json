@@ -1,10 +1,144 @@
-{
-    "plannr": {
+[
+    {
         "name": "Plannr",
-        "desc": "A super cool trip planner",
-        "img": "/assets/images/projects/plannr.png",
+        "desc": "Plan trips around an area and share them with friends!",
+        "image": "/src/assets/images/websites/plannr.webp",
         "link": "http://plannr-app.vercel.app",
         "repo": "https://github.com/g00gol/plannr",
+        "type": "website",
+        "featured": true
+    },
+    {
+        "name": "isciiz",
+        "desc": "My portfolio website (hi!). Using React.",
+        "image": "",
+        "link": "https://issacz.com",
+        "repo": "",
+        "tools": "React-bootstrap, Sass, Firebase Hosting, Personal Git",
+        "credits": "Issac Zheng",
+        "type": "website",
+        "featured": false
+    },
+    {
+        "name": "stevenshonorpledge",
+        "desc": "A typeracing website for our school's honor pledge. A great tool to deduce Stevens impostors (ඞ). Why, you ask? Why not?",
+        "image": "/src/assets/images/websites/honor_pledge.webp",
+        "link": "https://stevenshonorpledge.web.app/",
+        "repo": "",
+        "tools": "Firebase Firestore & Hosting, Personal Git",
+        "credits": "Issac Zheng",
+        "type": "website",
+        "featured": true
+    },
+    {
+        "name": "Aster",
+        "desc": "A NYC high school club directory made in collaboration with several students across various high schools in the city.",
+        "image": "/src/assets/images/websites/aster.webp",
+        "link": "https://aster.nyc/",
+        "repo": "",
+        "tools": "Jekyll, Firebase Firestore & Auth, Collaborative Git",
+        "credits": "Rebecca F., Daniel F., Steven Hsui, Issac Zheng",
+        "type": "website",
+        "featured": false
+    },
+    {
+        "name": "Headaches",
+        "desc": "Fun for the first three minutes till the game begins living up to its name. I apologize in advance.",
+        "image": "/src/assets/images/games/headaches.webp",
+        "link": "https://iscii.itch.io/headaches",
+        "repo": "https://github.com/iscii/headaches",
+        "type": "game",
+        "featured": false
+    },
+    {
+        "name": "We'll think about a name later",
+        "desc": "Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time.",
+        "image": "/src/assets/images/games/wtanl.webp",
+        "link": "https://iscii.itch.io/well-think-about-a-name-later",
+        "repo": "https://github.com/iscii/we-ll-think-about-a-name-later",
+        "type": "game",
+        "featured": false
+    },
+    {
+        "name": "Kiki's Cleaning Service",
+        "desc": "A game simulating the recycling of unused e-waste, created with five groupmates for a humanities project. Don't mind the cursor.",
+        "image": "/src/assets/images/games/kiki.webp",
+        "link": "https://iscii.itch.io/kikis-cleaning-service",
+        "repo": "https://github.com/iscii/kiki",
+        "type": "game",
+        "featured": false
+    },
+    {
+        "name": "isciiBot",
+        "desc": "A discord bot. Scheduled and handled events before it was a feature on Discord. Usage and methodology are about as outdated as the code though. Also set up polls or randomize your day's schedule for you if you have too much time in your hands (guess when I built this feature)!",
+        "image": "/src/assets/images/programs/isciibot.webp",
+        "link": "https://discord.com/oauth2/authorize?client_id=662780078337425481&permissions=8&scope=bot%20applications.commands",
+        "repo": "https://github.com/iscii/isciiBot",
+        "tools": "Node.js, discord.js, Heroku",
+        "type": "program",
+        "featured": false
+    },
+    {
+        "name": "Code Breaker",
+        "desc": "First project, you'd tell at first glance. Still pretty darn cool though I'll give it that.",
+        "image": "/src/assets/images/webgames/codebreaker.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%201%20-%20codebreaker/Lvl%201%20Proj%20Final%20v2%20(SUBMITTED%20ONE).html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Match Game",
+        "desc": "Second game, learnt css. Used it as a last resort project for a hackathon since my team and I couldn't pump anything out in 24 hours. Judge said it was cool. Didn't win.",
+        "image": "/src/assets/images/webgames/matchgame.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%202%20-%20matching%20game/Match%20Game-dark.html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Extreme Rock Paper Scissors",
+        "desc": "This one was a pain in the ass to make, but satisfying as heck. If there's an issue with the game's beginning, my patch I totally remember pushing probably didn't go through for some reason, but I am too lazy to check as of right now.",
+        "image": "/src/assets/images/webgames/rps.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%203%20-%20extreme%20rock%20paper%20scissors/index.html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Two Layer Tic Tac Toe",
+        "desc": "This one was also a pain. Friggin love the UI though, it do be sexy. The enemy AI is not great, but the game works!",
+        "image": "/src/assets/images/webgames/tl_ttt.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%204%20-%20two%20layer%20tic%20tac%20toe/index.html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Fast Food Register Simulator",
+        "desc": "Just mainly a display of CSS and background calculation-ability. Think the skills learnt making this would be useful in like, financial software, where options are preset and calculations are run in the background and then the frontend just displays results in a readable manner. Not that this is very readable.",
+        "image": "/src/assets/images/webgames/fast_food.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%205%20-%20fast%20food%20register%20simulator/index.html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Thirty One",
+        "desc": "This one was difficult but a pleasure to make. Definitely not optimized for every screen resolution and size, play fullscreen on a 21-inch 1080p monitor for best results. Works very well as far as I know, just read the instructions carefully because there's a lot to the game.",
+        "image": "/src/assets/images/webgames/thirty_one.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%206%20-%20thirty%20one/index.html",
+        "repo": "",
+        "type": "webgame",
+        "featured": false
+    },
+    {
+        "name": "Battleship",
+        "desc": "Truly a final project to end off the year. Displays all the logical functionality and object oriented programming that I have learnt in the year through a (self proclaimed) beautiful UI representing my core theme that I will eventually carry onto project designs over the rest of my life. Most proud of this one - it gives me a little nostalgia playing it with how good a time in my life it was when I'd made it.",
+        "image": "/src/assets/images/webgames/battleship.webp",
+        "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%207%20-%20battleship/index.html",
+        "repo": "",
+        "type": "webgame",
         "featured": true
     }
-}
+]

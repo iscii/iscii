@@ -1,8 +1,9 @@
 import Bio from './Bio';
-import Preview from './Featured';
+import Featured from './Featured';
 
 function Home() {
 	return (
+		// neon theme your site up
 		// https://www.oakharborwebdesigns.com -> dark mode
         // https://m7mad.dev -> single-page scrolling style
         // we can do scroll style, but still have a separate page for ALL projects. 
@@ -15,7 +16,7 @@ function Home() {
 				<Bio />
 			</div>
 			<div className='mt-12'>
-				<Preview />
+				<Featured />
 			</div>
 		</>
 	);

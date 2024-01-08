@@ -1,5 +1,4 @@
-// import picture from '../assets/images/picture.png';
-import picture from '../assets/images/alex.jpg';
+import picture from '../assets/images/alex.webp';
 
 function Home() {
 	return (
