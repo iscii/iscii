@@ -9,9 +9,11 @@ function Nav() {
 				<Link to='/'><div>Issac</div></Link>
 			</div>
 			<div className="flex flex-row justify-start w-1/2 text-sm">
-				<Link to='/'><div className='mr-5'>About</div></Link>
-				<Link to='/projects'><div className='mr-5'>Projects</div></Link>
-				<a href={resume} target='_blank'><div>Resume</div></a>
+				<Link to='#about'><div className='mr-5'>About</div></Link>
+				<Link to='#featured'><div className='mr-5'>Projects</div></Link>
+				{/* <Link to='#projects'><div className='mr-5'>Projects</div></Link> */}
+				<Link to="#resume"><div>Resume</div></Link>
+				{/* <a href={resume} target='_blank'><div>Resume</div></a> */}
 			</div>
 			<div className='flex flex-row justify-end'>
 				<a href='https://github.com/iscii' target="_blank" rel="noopener noreferrer"><FaGithub size={35}/></a>

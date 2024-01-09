@@ -1,8 +1,10 @@
 import picture from '../assets/images/alex.webp';
 
-function Home() {
+function Bio(props) {
+    const { bioOpacity } = props;
+    
 	return (
-		<div className='flex flex-row justify-between'>
+		<div id="about" className='sticky top-24 pt-12 z-0 flex flex-row justify-between' style={{ opacity: bioOpacity }}>
             <div className='w-8/12'>
                 Bello :D This a placeholder for an intro/description of myself. 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -15,4 +17,4 @@ function Home() {
 	);
 };
 
-export default Home;
+export default Bio;

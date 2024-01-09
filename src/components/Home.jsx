@@ -1,16 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { StyleContext } from '../contexts/StyleContext';
 import Bio from './Bio';
 import Featured from './Featured';
 import Resume from './Resume';
 
 function Home() {
 	const [bioOpacity, setBioOpacity] = useState(100);
+	const {setBioHidden} = useContext(StyleContext);
 
 	const handleScroll = () => {
 		const scrollPos = window.scrollY;
-		const maxScrollPos = document.querySelector('#bio').offsetHeight;
+		const maxScrollPos = document.querySelector('#about').offsetHeight;
 		const ratio = 1 - (scrollPos / maxScrollPos);
-		setBioOpacity(ratio);
+		if(ratio >= 0) {
+			setBioOpacity(ratio);
+			setBioHidden(ratio < 0.15)
+		}
 	};
 	
 	useEffect(() => {
@@ -28,15 +33,9 @@ function Home() {
 		// https://dev.to/erikkarlsson/how-to-add-a-preview-of-your-react-or-any-other-site-when-sharing-it-2fhf -> set meta tags for our site when previewed on other sites
 		
 		<>
-			<div id="bio" className="sticky top-24 pt-12 z-0" style={{ opacity: bioOpacity }}>
-				<Bio />
-			</div>
-			<div className='relative z-10'>
-				<Featured />
-			</div>
-			<div className='relative pt-12 z-10'>
-				<Resume />
-			</div>
+			<Bio bioOpacity={bioOpacity}/>
+			<Featured />
+			<Resume />
 		</>
 	);
 };

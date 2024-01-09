@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import ProjectCard from './ProjectCard';
+import Header from './subcomponents/Header';
+import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
 function Featured() {
@@ -13,17 +14,13 @@ function Featured() {
 	}, []);
 	
 	return (
-		<>
-			<h1 className='py-20 bg-gradient-to-t from-white to-transparent'>
-				Featured Projects	
-			</h1>
-			<div className='bg-white'>
+		<div>
+			<Header>Featured Projects</Header>
+			<div id="featured" className='relative z-10 bg-white scroll-mt-52'>
 				{featuredProjects}
-			</div>
-			<div className='py-10'>
 				Wanna see more projects? Head <Link to='/projects'>here</Link>!
 			</div>
-        </>
+        </div>
 	);
 };
 

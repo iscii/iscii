@@ -2,7 +2,7 @@ function ProjectCard(props) {
     const {name, desc, image, link, repo} = props;
 
 	return (
-		<div className='flex flex-row justify-between'>
+		<div className='flex flex-row justify-between mb-10 last-of-type:mb-0'>
             <img src={image} width={400} height={400} />
             <div className='w-8/12'>
                 <h3>{name}</h3>
