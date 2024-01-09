@@ -14,8 +14,13 @@ function Featured() {
 	
 	return (
 		<>
-			{featuredProjects}
-			<div>
+			<h1 className='py-20 bg-gradient-to-t from-white to-transparent'>
+				Featured Projects	
+			</h1>
+			<div className='bg-white'>
+				{featuredProjects}
+			</div>
+			<div className='py-10'>
 				Wanna see more projects? Head <Link to='/projects'>here</Link>!
 			</div>
         </>

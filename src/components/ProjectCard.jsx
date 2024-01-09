@@ -1,8 +1,6 @@
 function ProjectCard(props) {
     const {name, desc, image, link, repo} = props;
 
-    console.log(image);
-    
 	return (
 		<div className='flex flex-row justify-between'>
             <img src={image} width={400} height={400} />
