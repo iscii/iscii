@@ -5,11 +5,11 @@ import resume from '../assets/resume.pdf';
 function Resume() {
     // might remove this 
 	return (
-        <div>
+        <div className='px-24'>
             <Header>Resume</Header>
             <div id="resume" className='scroll-mt-52'>
                 <Document file={resume}>
-                    <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={1080}/>
+                    <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={980}/>
                 </Document>        
             </div>
         </div>

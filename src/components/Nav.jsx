@@ -4,7 +4,7 @@ import resume from '../assets/resume.pdf';
 
 function Nav() {
 	return (
-		<nav className='sticky top-0 z-40 flex flex-row justify-between items-center h-24 bg-white'>
+		<nav className='sticky top-0 px-24 z-40 flex flex-row justify-between items-center h-24 bg-white'>
 			<div className="flex flex-row justify-start">
 				<Link to='/'><div>Issac</div></Link>
 			</div>

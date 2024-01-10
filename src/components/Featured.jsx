@@ -14,7 +14,7 @@ function Featured() {
 	}, []);
 	
 	return (
-		<div>
+		<div className='px-24'>
 			<Header>Featured Projects</Header>
 			<div id="featured" className='relative z-10 bg-white scroll-mt-52'>
 				{featuredProjects}

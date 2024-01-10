@@ -15,8 +15,8 @@ function App() {
 
 	return (
         // can create a new div for format if i ever want to use empty space. can move into a component that defines structure of page and wraps other components.
-        <div className="grid grid-cols-4 w-full h-full" ref={ref}>
-            <div className="col-start-2 col-span-2">
+        <div className="grid grid-cols-12 w-full h-full" ref={ref}>
+            <div className="col-start-3 col-span-8">
                 <ContextProvider>
                     <Nav />
                     <ScrollToAnchor />
