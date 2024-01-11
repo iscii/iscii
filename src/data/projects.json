@@ -5,7 +5,7 @@
         "image": "/src/assets/images/websites/plannr.webp",
         "link": "http://plannr-app.vercel.app",
         "repo": "https://github.com/g00gol/plannr",
-        "type": "website",
+        "category": "Websites",
         "featured": true
     },
     {
@@ -16,7 +16,7 @@
         "repo": "",
         "tools": "React-bootstrap, Sass, Firebase Hosting, Personal Git",
         "credits": "Issac Zheng",
-        "type": "website",
+        "category": "Websites",
         "featured": false
     },
     {
@@ -27,7 +27,7 @@
         "repo": "",
         "tools": "Firebase Firestore & Hosting, Personal Git",
         "credits": "Issac Zheng",
-        "type": "website",
+        "category": "Websites",
         "featured": true
     },
     {
@@ -38,7 +38,7 @@
         "repo": "",
         "tools": "Jekyll, Firebase Firestore & Auth, Collaborative Git",
         "credits": "Rebecca F., Daniel F., Steven Hsui, Issac Zheng",
-        "type": "website",
+        "category": "Websites",
         "featured": false
     },
     {
@@ -47,7 +47,7 @@
         "image": "/src/assets/images/games/headaches.webp",
         "link": "https://iscii.itch.io/headaches",
         "repo": "https://github.com/iscii/headaches",
-        "type": "game",
+        "category": "Games",
         "featured": false
     },
     {
@@ -56,7 +56,7 @@
         "image": "/src/assets/images/games/wtanl.webp",
         "link": "https://iscii.itch.io/well-think-about-a-name-later",
         "repo": "https://github.com/iscii/we-ll-think-about-a-name-later",
-        "type": "game",
+        "category": "Games",
         "featured": false
     },
     {
@@ -65,7 +65,7 @@
         "image": "/src/assets/images/games/kiki.webp",
         "link": "https://iscii.itch.io/kikis-cleaning-service",
         "repo": "https://github.com/iscii/kiki",
-        "type": "game",
+        "category": "Games",
         "featured": false
     },
     {
@@ -75,25 +75,25 @@
         "link": "https://discord.com/oauth2/authorize?client_id=662780078337425481&permissions=8&scope=bot%20applications.commands",
         "repo": "https://github.com/iscii/isciiBot",
         "tools": "Node.js, discord.js, Heroku",
-        "type": "program",
+        "category": "Programs",
         "featured": false
     },
     {
         "name": "Code Breaker",
         "desc": "First project, you'd tell at first glance. Still pretty darn cool though I'll give it that.",
-        "image": "/src/assets/images/webgames/codebreaker.webp",
+        "image": "/src/assets/images/webgames/code_breaker.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%201%20-%20codebreaker/Lvl%201%20Proj%20Final%20v2%20(SUBMITTED%20ONE).html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
         "name": "Match Game",
         "desc": "Second game, learnt css. Used it as a last resort project for a hackathon since my team and I couldn't pump anything out in 24 hours. Judge said it was cool. Didn't win.",
-        "image": "/src/assets/images/webgames/matchgame.webp",
+        "image": "/src/assets/images/webgames/match_game.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%202%20-%20matching%20game/Match%20Game-dark.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
@@ -102,7 +102,7 @@
         "image": "/src/assets/images/webgames/rps.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%203%20-%20extreme%20rock%20paper%20scissors/index.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
@@ -111,7 +111,7 @@
         "image": "/src/assets/images/webgames/tl_ttt.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%204%20-%20two%20layer%20tic%20tac%20toe/index.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
@@ -120,7 +120,7 @@
         "image": "/src/assets/images/webgames/fast_food.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%205%20-%20fast%20food%20register%20simulator/index.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
@@ -129,7 +129,7 @@
         "image": "/src/assets/images/webgames/thirty_one.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%206%20-%20thirty%20one/index.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": false
     },
     {
@@ -138,7 +138,7 @@
         "image": "/src/assets/images/webgames/battleship.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%207%20-%20battleship/index.html",
         "repo": "",
-        "type": "webgame",
+        "category": "Web Games",
         "featured": true
     }
 ]

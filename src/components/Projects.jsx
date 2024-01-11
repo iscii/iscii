@@ -1,22 +1,32 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Header from './subcomponents/Header';
 import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
+    const categories = useRef(['Websites', 'Games', 'Web Games', 'Programs']);
 	
 	useEffect(() => {
-		const projects = projectData.map(project => <ProjectCard key={`featured-${project.name}`} {...project}/>);
+		const projects = categories.current
+            .map(category =>
+                <div key={category}>
+                    <Header opaque={true}>{category}</Header>
+                    <div className=''>
+                    {
+                        projectData
+                            .filter(project => project.category === category)
+                            .map(project => <ProjectCard key={`${category}-${project.name}`} {...project}/>)
+                    }
+                    </div>
+                </div>
+            );
 		setProjects(projects);
 	}, []);
     
     return (
         <div className=''>
-            <Header opaque={true}>Projects</Header>
-            <div className=''>
-                {projects}
-            </div>
+            {projects}
         </div>
     );
 }
