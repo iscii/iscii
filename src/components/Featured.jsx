@@ -1,10 +1,11 @@
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './subcomponents/Header';
 import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
-function Featured() {
+function Featured(props) {
+	const { bioHidden } = props;
 	const [featuredProjects, setFeaturedProjects] = useState([]);
 	
 	useEffect(() => {
@@ -15,7 +16,7 @@ function Featured() {
 	
 	return (
 		<div className='px-24'>
-			<Header>Featured Projects</Header>
+			<Header opaque={bioHidden}>Featured Projects</Header>
 			<div id="featured" className='relative z-10 bg-white scroll-mt-52'>
 				{featuredProjects}
 				Wanna see more projects? Head <Link to='/projects'>here</Link>!

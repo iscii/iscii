@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { ContextProvider } from "./contexts/Context";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
+import Projects from "./components/Projects";
 import CounterProtected from "./components/middleware/CounterProtected";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
@@ -18,6 +19,7 @@ function App() {
                     <ScrollToAnchor />
                     <Routes>
                         <Route path="/" element={<Home />} />
+                        <Route path="/projects" element={<Projects />} />
 
                         <Route path='/signin' element={<CounterProtected />}>
                             <Route path="/signin" element={<Signin />} />

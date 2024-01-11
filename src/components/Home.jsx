@@ -1,12 +1,11 @@
 import { useState, useEffect, useContext } from 'react';
-import { StyleContext } from '../contexts/StyleContext';
 import Bio from './Bio';
 import Featured from './Featured';
 import Resume from './Resume';
 
 function Home() {
 	const [bioOpacity, setBioOpacity] = useState(100);
-	const {setBioHidden} = useContext(StyleContext);
+	const [bioHidden, setBioHidden] = useState(false);
 
 	const handleScroll = () => {
 		const scrollPos = window.scrollY;
@@ -35,9 +34,9 @@ function Home() {
 		// https://dev.to/erikkarlsson/how-to-add-a-preview-of-your-react-or-any-other-site-when-sharing-it-2fhf -> set meta tags for our site when previewed on other sites
 
 		<>
-			<Bio bioOpacity={bioOpacity}/>
-			<Featured />
-			<Resume />
+			<Bio bioOpacity={bioOpacity} />
+			<Featured bioHidden={bioHidden} />
+			<Resume bioHidden={bioHidden}/>
 		</>
 	);
 };
