@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './subcomponents/Header';
+import HeadedContent from './subcomponents/HeadedContent';
 import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
@@ -18,10 +19,10 @@ function Featured(props) {
 		// might be able to make this, experiences, and projects (header + content) into its own component
 		<div className='px-24'>
 			<Header opaque={bioHidden}>Featured Projects</Header>
-			<div id="featured" className='scroll-mt-48'>
+			<HeadedContent id='featured'>
 				{featuredProjects}
 				Wanna see more projects? Head <Link to='/projects'>here</Link>!
-			</div>
+			</HeadedContent>
         </div>
 	);
 };

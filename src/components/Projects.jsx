@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-
 import Header from './subcomponents/Header';
+import HeadedContent from './subcomponents/HeadedContent';
 import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
@@ -13,13 +13,13 @@ function Projects() {
             .map(category =>
                 <div key={category}>
                     <Header opaque={true}>{{'websites': 'Websites', 'games': 'Games', 'programs': 'Programs', 'webgames': 'Web Games'}[category]}</Header>
-                    <div id={category} className='relative z-10 bg-white scroll-mt-48'>
+                    <HeadedContent id={category}>
                     {
                         projectData
-                            .filter(project => project.category === category)
-                            .map(project => <ProjectCard key={`${category}-${project.name}`} {...project}/>)
+                        .filter(project => project.category === category)
+                        .map(project => <ProjectCard key={`${category}-${project.name}`} {...project}/>)
                     }
-                    </div>
+                    </HeadedContent>
                 </div>
             );
 		setProjects(projects);
