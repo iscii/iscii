@@ -40,6 +40,8 @@ function Home() {
 		// TODO: add skills
 		// TODO: add date done/range for each project
 		// TODO: add tools for each project
+
+		// TODO: add smooth swipe-left/right animation for the little tab triangle and for entire page content
 		
 		// TODO: add hotkeys to navigate
 		// TODO: add theme toggle

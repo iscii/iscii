@@ -1,4 +1,4 @@
-import picture from '../assets/images/alex.webp';
+import picture from '../assets/images/bio.webp';
 import { FaRegHandPointRight, FaRegEnvelope } from 'react-icons/fa';
 
 function Bio(props) {
@@ -21,7 +21,7 @@ function Bio(props) {
                     Wanna reach out to me? <FaRegHandPointRight className='inline'/> <a href='mailto:izheng@stevens.edu'><FaRegEnvelope className='inline'/></a>
                 </div>
             </div>
-			<img src={picture} width={400} height={400} />
+			<img src={picture} width={400} className='rounded-full' alt='me' title='me'/>
 		</div>
 	);
 };
