@@ -1,4 +1,4 @@
-import picture from '../assets/images/bio.webp';
+import picture from '/images/bio.webp';
 import { FaRegHandPointRight, FaRegEnvelope } from 'react-icons/fa';
 
 function Bio(props) {
