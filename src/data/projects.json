@@ -10,11 +10,11 @@
     },
     {
         "name": "Portfolio",
-        "desc": "My portfolio website (hi!). Using React.",
+        "desc": "My portfolio website (hi!).",
         "image": "portfolio.webp",
         "link": "https://issacz.com",
         "repo": "",
-        "tools": "React-bootstrap, Sass, Firebase Hosting, Personal Git",
+        "tools": "React, TailwindCSS",
         "credits": "Issac Zheng",
         "category": "websites",
         "featured": false
@@ -52,7 +52,7 @@
     },
     {
         "name": "We'll think about a name later",
-        "desc": "Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time.",
+        "desc": "Dodge the- oh god, what is that monstrosity?! Unfinished game made with a great highschool friend of mine. Yes, this abomination is it. No, we are not sorry this time.",
         "image": "wtanl.webp",
         "link": "https://iscii.itch.io/well-think-about-a-name-later",
         "repo": "https://github.com/iscii/we-ll-think-about-a-name-later",
@@ -61,7 +61,7 @@
     },
     {
         "name": "Kiki's Cleaning Service",
-        "desc": "A game simulating the recycling of unused e-waste, created with five groupmates for a humanities project. Don't mind the cursor.",
+        "desc": "Recycling of unused e-waste simulator, how fun! Created with five groupmates for a humanities project. Don't mind the cursor.",
         "image": "kiki.webp",
         "link": "https://iscii.itch.io/kikis-cleaning-service",
         "repo": "https://github.com/iscii/kiki",
@@ -80,7 +80,7 @@
     },
     {
         "name": "Battleship",
-        "desc": "Truly a final project to end off the year. Displays all the logical functionality and object-oriented programming that I have learned in the year through a (self-proclaimed) beautiful UI representing my core theme that I will eventually carry onto project designs over the rest of my life. Most proud of this one - it gives me a little nostalgia playing it with how good a time in my life it was when I'd made it.",
+        "desc": "Remake of the all-famous battleship game with a cool UI and only slightly dumb computer player. Truly a final project to end off the year - displays all the logical functionality and object-oriented programming that I have learned in the year through a (self-proclaimed) beautiful UI representing my core theme that I will eventually carry onto project designs over the rest of my life. Most proud of this one - it gives me a little nostalgia playing it with how good a time in my life it was when I'd made it.",
         "image": "battleship.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%207%20-%20battleship/index.html",
         "repo": "",
@@ -89,7 +89,7 @@
       },
       {
         "name": "Thirty One",
-        "desc": "This one was difficult but a pleasure to make. Definitely not optimized for every screen resolution and size, play fullscreen on a 21-inch 1080p monitor for best results. Works very well as far as I know, just read the instructions carefully because there's a lot to the game.",
+        "desc": "Like Blackjack on crack. This one was difficult but a pleasure to make. Definitely not optimized for every screen resolution and size, play fullscreen on a 21-inch 1080p monitor for best results. Works very well as far as I know, just read the instructions carefully because there's a lot to the game.",
         "image": "thirty_one.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%206%20-%20thirty%20one/index.html",
         "repo": "",
@@ -107,7 +107,7 @@
       },
       {
         "name": "Two Layer Tic Tac Toe",
-        "desc": "This one was also a pain. Friggin love the UI though, it do be sexy. The enemy AI is not great, but the game works!",
+        "desc": "Tic Tac Toe, but with more layers. We can always use more layers. This one was also a pain. Friggin love the UI though, it do be sexy. The enemy AI is not great, but the game works!",
         "image": "tl_ttt.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%204%20-%20two%20layer%20tic%20tac%20toe/index.html",
         "repo": "",
@@ -116,7 +116,7 @@
       },
       {
         "name": "Extreme Rock Paper Scissors",
-        "desc": "This one was a pain in the ass to make, but satisfying as heck. If there's an issue with the game's beginning, my patch I totally remember pushing probably didn't go through for some reason, but I am too lazy to check as of right now.",
+        "desc": "Rock Paper Scissors, but it's a World War and we've got entire arsenals of them. This one was a pain in the ass to make, but satisfying as heck. If there's an issue with the game's beginning, my patch I totally remember pushing probably didn't go through for some reason, but I am too lazy to check as of right now.",
         "image": "rps.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%203%20-%20extreme%20rock%20paper%20scissors/index.html",
         "repo": "",
@@ -125,7 +125,7 @@
       },
       {
         "name": "Match Game",
-        "desc": "Second game, learnt css. Used it as a last resort project for a hackathon since my team and I couldn't pump anything out in 24 hours. Judge said it was cool. Didn't win.",
+        "desc": "Match the cards. Second game, learnt css. Used it as a last resort project for a hackathon since my team and I couldn't pump anything out in 24 hours. Judge said it was cool. Didn't win.",
         "image": "match_game.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%202%20-%20matching%20game/Match%20Game-dark.html",
         "repo": "",
@@ -134,7 +134,7 @@
       },
       {
         "name": "Code Breaker",
-        "desc": "First project, you'd tell at first glance. Still pretty darn cool though I'll give it that.",
+        "desc": "Crack the vault code given a couple hints. First project, you'd tell at first glance. Still pretty darn cool though I'll give it that.",
         "image": "code_breaker.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%201%20-%20codebreaker/Lvl%201%20Proj%20Final%20v2%20(SUBMITTED%20ONE).html",
         "repo": "",
