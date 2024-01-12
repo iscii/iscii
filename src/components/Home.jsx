@@ -33,6 +33,12 @@ function Home() {
 		// add a scrolly thingy so that scrolling down from the Bio doesn't move Bio, just moves everything below it up as a page, which then covers the Bio. (not in m7mad)
 		// https://dev.to/erikkarlsson/how-to-add-a-preview-of-your-react-or-any-other-site-when-sharing-it-2fhf -> set meta tags for our site when previewed on other sites
 
+		// TODO: add experiences
+		// TODO: styling on content
+		// TODO: add about content
+		// Then production
+		// Then work on extras (sandbox/playground, dark/light toggle, gamemode, etc..)
+
 		<>
 			<Bio bioOpacity={bioOpacity} />
 			<Featured bioHidden={bioHidden} />

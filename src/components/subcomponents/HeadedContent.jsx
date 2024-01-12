@@ -3,7 +3,7 @@ function HeadedContent(props) {
     const {id, children} = props;
 
 	return (
-        <div id={id} className='scroll-mt-48'>
+        <div id={id} className='relative bg-white scroll-mt-48'>
             {children}
         </div>
 	);
