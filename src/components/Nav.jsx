@@ -11,7 +11,7 @@ function Nav() {
 			<div className="grid grid-rows-3 w-1/2 h-full text-sm">
 				<div className='grid row-start-2 row-span-1 grid-cols-6'>
 					<div className='col-start-1 col-span-1 flex justify-center items-center relative'>
-						<div className='before:absolute before:-bottom-[0.2rem] before:left-[42%] before:bg-white before:dark:bg-slate-800 before:w-[0.9rem] before:h-1 after:absolute after:-bottom-[0.45rem] after:left-[45%] after:w-3 after:h-3 after:rotate-45 after:border-b-2 after:border-r-2'>
+						<div className='before:absolute before:-bottom-[0.3rem] before:left-[45%] before:w-2 before:h-2 before:rotate-45 before:bg-white before:dark:bg-slate-800 after:absolute after:-bottom-[0.3rem] after:left-[45%] after:w-2 after:h-2 after:rotate-45 after:border-b-2 after:border-r-2'>
 							<Link to='/#about' className=''>About</Link></div>
 						</div>
 					<div className='col-start-2 col-span-1 flex justify-center items-center relative'><Link to='/projects'>Projects</Link></div>
