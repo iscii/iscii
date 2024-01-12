@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { ContextProvider } from "./contexts/Context";
+// import { ContextProvider } from "./contexts/Context";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
@@ -14,7 +14,7 @@ function App() {
         // can create a new div for format if i ever want to use empty space. can move into a component that defines structure of page and wraps other components.
         <div className="grid grid-cols-12 w-full h-full">
             <div className="col-start-3 col-span-8">
-                <ContextProvider>
+                {/* <ContextProvider> */}
                     <Nav />
                     <ScrollToAnchor />
                     <Routes>
@@ -30,7 +30,7 @@ function App() {
 
                         <Route path="*" element={<Home />} />
                     </Routes>
-                </ContextProvider>
+                {/* </ContextProvider> */}
             </div>
         </div>
 	);
