@@ -1,4 +1,3 @@
-
 function HeadedContent(props) {
     const {id, children} = props;
 

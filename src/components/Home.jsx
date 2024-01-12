@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Bio from './Bio';
 import Featured from './Featured';
-import Skills from './Skills';
+// import Skills from './Skills';
 
 function Home() {
 	const [bioOpacity, setBioOpacity] = useState(100);

@@ -1,11 +1,9 @@
-import { Document, Page } from 'react-pdf'
 import Header from './subcomponents/Header'
-import resume from '../assets/resume.pdf';
 import HeadedContent from './subcomponents/HeadedContent';
 
 function Skills(props) {
     const {bioHidden} = props;
-    // might remove this 
+
 	return (
         <div className='px-24'>
             <Header opaque={bioHidden}>Skills</Header>

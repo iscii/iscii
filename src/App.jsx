@@ -4,9 +4,9 @@ import { ContextProvider } from "./contexts/Context";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Projects from "./components/Projects";
-import CounterProtected from "./components/middleware/CounterProtected";
-import Signin from "./components/Signin";
-import Signup from "./components/Signup";
+// import CounterProtected from "./components/middleware/CounterProtected";
+// import Signin from "./components/Signin";
+// import Signup from "./components/Signup";
 import ScrollToAnchor from "./components/utilities/ScrollToAnchor";
 
 function App() {
@@ -21,12 +21,12 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
 
-                        <Route path='/signin' element={<CounterProtected />}>
+                        {/* <Route path='/signin' element={<CounterProtected />}>
                             <Route path="/signin" element={<Signin />} />
                         </Route>
                         <Route path='/signup' element={<CounterProtected />}>
                             <Route path="/signup" element={<Signup />} />
-                        </Route>
+                        </Route> */}
 
                         <Route path="*" element={<Home />} />
                     </Routes>
