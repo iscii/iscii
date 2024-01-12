@@ -9,7 +9,7 @@
         "featured": true
     },
     {
-        "name": "isciiz",
+        "name": "Portfolio",
         "desc": "My portfolio website (hi!). Using React.",
         "image": "/src/assets/images/websites/portfolio.webp",
         "link": "https://issacz.com",

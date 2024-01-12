@@ -21,7 +21,9 @@ function Featured(props) {
 			<Header opaque={bioHidden}>Featured Projects</Header>
 			<HeadedContent id='featured'>
 				{featuredProjects}
-				Wanna see more projects? Head <Link to='/projects'>here</Link>!
+				<div className='mb-10'>
+					Wanna see more projects? Head <Link to='/projects' className='underline'>here</Link>!
+				</div>
 			</HeadedContent>
         </div>
 	);

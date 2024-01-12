@@ -21,14 +21,15 @@ function Nav() {
 			</div>
 			<div className="grid grid-rows-3 w-1/2 h-full text-sm">
 				<div className='grid row-start-2 row-span-1 grid-cols-6'>
-					<NavTab col={1} link='/#about' openTabState={[openTab, setOpenTab]}>About</NavTab>
+					<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]}>Home</NavTab>
 					<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]}>Projects</NavTab>
 					<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
 				</div>
 				{   openTab == 1 &&
 					<div className='grid row-start-3 row-span-1 grid-cols-6'>
-						<SubTab col={1} link='/#featured'>Featured</SubTab>
-						<SubTab col={2} link='/#experience'>Experience</SubTab>
+						<SubTab col={1} link='/#about'>About</SubTab>
+						<SubTab col={2} link='/#featured'>Featured</SubTab>
+						{/* <SubTab col={3} link='/#skills'>Skills</SubTab> */}
 					</div>
 				}
 				{	openTab == 2 &&
