@@ -1,16 +1,22 @@
 import picture from '../assets/images/alex.webp';
+import { FaRegHandPointRight, FaRegEnvelope } from 'react-icons/fa';
 
 function Bio(props) {
     const { bioOpacity } = props;
 
 	return (
 		<div id="about" className='sticky top-24 pt-12 px-24 z-0 flex flex-row justify-between' style={{ opacity: bioOpacity }}>
-            <div className='w-8/12'>
-                Bello :D This a placeholder for an intro/description of myself. 
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            <div className='relative w-8/12'>
+                Hi! I'm Issac. 
+                <br/> 
+                I currently attend Stevens Institute of Technology and study Computer Science. 
+                <br/>
+                I enjoy music, exploring, and the little things; related to my position, problem solving and a solid challenge. I'm looking for work in a warm, 
+                ever-improving environment driven by a shared goal where I could palpably reap the rewards of my years of work and make a difference.
+                <br/>
+                <div className='absolute bottom-0'>
+                    Wanna reach out to me? <FaRegHandPointRight className='inline'/> <a href='mailto:izheng@stevens.edu'><FaRegEnvelope className='inline'/></a>
+                </div>
             </div>
 			<img src={picture} width={400} height={400} />
 		</div>
