@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
 import Bio from './Bio';
 import Featured from './Featured';
-import Resume from './Resume';
+import Experience from './Experience';
 
 function Home() {
 	const [bioOpacity, setBioOpacity] = useState(100);
@@ -36,7 +36,7 @@ function Home() {
 		<>
 			<Bio bioOpacity={bioOpacity} />
 			<Featured bioHidden={bioHidden} />
-			<Resume bioHidden={bioHidden}/>
+			<Experience bioHidden={bioHidden}/>
 		</>
 	);
 };

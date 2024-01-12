@@ -8,12 +8,19 @@ function Nav() {
 			<div className="flex flex-row justify-start">
 				<Link to='/#about'><div>Issac</div></Link>
 			</div>
-			<div className="flex flex-row justify-start w-1/2 text-sm">
-				<Link to='/#about'><div className='mr-5'>About</div></Link>
-				<Link to='/#featured'><div className='mr-5'>Projects</div></Link>
-				{/* <Link to='#projects'><div className='mr-5'>Projects</div></Link> */}
-				<Link to="/#resume"><div>Resume</div></Link>
-				{/* <a href={resume} target='_blank'><div>Resume</div></a> */}
+			<div className="grid grid-rows-3 w-1/2 h-full text-sm">
+				<div className='grid row-start-2 row-span-1 grid-cols-6'>
+					<div className='col-start-1 col-span-1 flex justify-center items-center relative'>
+						<div className='before:absolute before:-bottom-[0.1rem] before:left-[42.5%] before:bg-white before:dark:bg-slate-800 before:w-3 before:h-1 after:absolute after:-bottom-[0.45rem] after:left-[42.5%] after:w-3 after:h-3 after:rotate-45 after:border-b-2 after:border-r-2'>
+							<Link to='/#about' className=''>About</Link></div>
+						</div>
+					<div className='col-start-2 col-span-1 flex justify-center items-center relative'><Link to='/projects'>Projects</Link></div>
+					<div className='col-start-3 col-span-1 flex justify-center items-center relative'><a href={resume} target='_blank'>Resume</a></div>
+				</div>
+				<div className='grid row-start-3 row-span-1 grid-cols-6'>
+					<div className='col-start-1 flex justify-center items-center border-t-2'><Link to='/#featured'>Featured</Link></div>
+					<div className='col-start-2 flex justify-center items-center border-t-2'><Link to='/#experience'>Experience</Link></div>
+				</div>
 			</div>
 			<div className='flex flex-row justify-end'>
 				<a href='https://github.com/iscii' target="_blank" rel="noopener noreferrer"><FaGithub size={35}/></a>

@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
+
 import Header from './subcomponents/Header';
 import ProjectCard from './subcomponents/ProjectCard';
 import projectData from '../data/projects.json';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
-    const categories = useRef(['Websites', 'Games', 'Web Games', 'Programs']);
+    const categories = useRef(['Websites', 'Games', 'Programs', 'Web Games']);
 	
 	useEffect(() => {
 		const projects = categories.current
@@ -25,7 +26,7 @@ function Projects() {
 	}, []);
     
     return (
-        <div className=''>
+        <div className='px-24'>
             {projects}
         </div>
     );
