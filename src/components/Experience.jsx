@@ -8,7 +8,7 @@ function Experience(props) {
 	return (
         <div className='px-24'>
             <Header opaque={bioHidden}>Experience</Header>
-            <div id="experience" className='scroll-mt-52'>
+            <div id="experience" className='scroll-mt-48'>
                 <Document file={resume}>
                     <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} width={980}/>
                 </Document>        

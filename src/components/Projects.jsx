@@ -6,14 +6,14 @@ import projectData from '../data/projects.json';
 
 function Projects() {
     const [projects, setProjects] = useState([]);
-    const categories = useRef(['Websites', 'Games', 'Programs', 'Web Games']);
+    const categories = useRef(['websites', 'games', 'programs', 'webgames']);
 	
 	useEffect(() => {
 		const projects = categories.current
             .map(category =>
                 <div key={category}>
-                    <Header opaque={true}>{category}</Header>
-                    <div className=''>
+                    <Header opaque={true}>{{'websites': 'Websites', 'games': 'Games', 'programs': 'Programs', 'webgames': 'Web Games'}[category]}</Header>
+                    <div id={category} className='relative z-10 bg-white scroll-mt-48'>
                     {
                         projectData
                             .filter(project => project.category === category)

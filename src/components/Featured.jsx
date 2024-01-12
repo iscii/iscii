@@ -15,9 +15,10 @@ function Featured(props) {
 	}, []);
 	
 	return (
+		// might be able to make this, experiences, and projects (header + content) into its own component
 		<div className='px-24'>
 			<Header opaque={bioHidden}>Featured Projects</Header>
-			<div id="featured" className='relative z-10 bg-white scroll-mt-52'>
+			<div id="featured" className='scroll-mt-48'>
 				{featuredProjects}
 				Wanna see more projects? Head <Link to='/projects'>here</Link>!
 			</div>

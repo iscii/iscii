@@ -1,4 +1,3 @@
-
 function Header(props) {
     const {opaque} = props;
 
