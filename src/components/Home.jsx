@@ -18,6 +18,7 @@ function Home() {
 	};
 	
 	useEffect(() => {
+		window.scrollTo({ top: 0});
 		window.addEventListener('scroll', handleScroll, { passive: true });
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);

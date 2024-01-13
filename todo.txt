@@ -11,6 +11,7 @@ https://dev.to/erikkarlsson/how-to-add-a-preview-of-your-react-or-any-other-site
 ...
 Then production
 Then work on extras (sandbox/playground, dark/light toggle, gamemode, etc..)
+
 TODO: add new projects
 TODO: colorize site with theme colors
     
@@ -19,6 +20,8 @@ TODO: add date done/range for each project
 TODO: add tools for each project
 
 TODO: add smooth swipe-left/right animation for the little tab triangle and for entire page content
+TODO: add load-in animations for projeects
+
     
 TODO: add hotkeys to navigate
 TODO: add theme toggle

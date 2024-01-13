@@ -9,6 +9,7 @@ function Projects() {
     const categories = useRef(['websites', 'games', 'programs', 'webgames']);
 	
 	useEffect(() => {
+        window.scrollTo({ top: 0});
 		const projects = categories.current
             .map(category =>
                 <div key={category}>
