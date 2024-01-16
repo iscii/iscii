@@ -12,3 +12,9 @@ body,
     font-size: 1.15rem;
     scrollbar-gutter: stable;
 }
+
+@layer components {
+    .header-fade {
+        background: linear-gradient(0deg, white, rgba(0,0,0,0));
+    }
+}
