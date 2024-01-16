@@ -5,16 +5,12 @@ import Featured from './Featured';
 
 function Home() {
 	const [bioOpacity, setBioOpacity] = useState(100);
-	const [bioHidden, setBioHidden] = useState(false);
 
 	const handleScroll = () => {
 		const scrollPos = window.scrollY;
 		const maxScrollPos = document.querySelector('#about').offsetHeight;
 		const ratio = 1 - (scrollPos / maxScrollPos);
-		if(ratio >= 0) {
-			setBioOpacity(ratio < 0.15 ? 0 : ratio);
-			setBioHidden(ratio < 0.15)
-		}
+		setBioOpacity(ratio < 0.15 ? 0 : ratio); // setState only triggers rerenders when the value changes 
 	};
 	
 	useEffect(() => {
@@ -26,7 +22,7 @@ function Home() {
 	return (
 		<>
 			<Bio bioOpacity={bioOpacity} />
-			<Featured bioHidden={bioHidden} />
+			<Featured bioHidden={bioOpacity == 0} />
 			{/* <Skills bioHidden={bioHidden}/> */}
 		</>
 	);
