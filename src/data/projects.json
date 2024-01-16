@@ -80,7 +80,7 @@
     },
     {
         "name": "Battleship",
-        "desc": "Remake of the all-famous battleship game with a cool UI and only slightly dumb computer player. Truly a final project to end off the year - displays all the logical functionality and object-oriented programming that I have learned in the year through a (self-proclaimed) beautiful UI representing my core theme that I will eventually carry onto project designs over the rest of my life. Most proud of this one - it gives me a little nostalgia playing it with how good a time in my life it was when I'd made it.",
+        "desc": "Remake of the all-famous battleship game with a cool UI and only slightly dumb computer player. Truly a final project to end off the year - displays all the logical functionality and object-oriented programming that I have learned in the year through a (self-proclaimed) beautiful UI representing my core theme that I will eventually carry onto project designs over the rest of my life.",
         "image": "battleship.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%207%20-%20battleship/index.html",
         "repo": "",
@@ -107,7 +107,7 @@
       },
       {
         "name": "Two Layer Tic Tac Toe",
-        "desc": "Tic Tac Toe, but with more layers. We can always use more layers. This one was also a pain. Friggin love the UI though, it do be sexy. The enemy AI is not great, but the game works!",
+        "desc": "Tic Tac Toe, but with more layers. We can always use more layers. This one was also a pain. Friggin love the UI though, it's sweet, suave, and simple. The enemy AI is not great, but the game works!",
         "image": "tl_ttt.webp",
         "link": "https://iscii.github.io/Web-Development-2019-2020/Projects/level%204%20-%20two%20layer%20tic%20tac%20toe/index.html",
         "repo": "",
