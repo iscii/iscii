@@ -21,7 +21,7 @@
     },
     {
         "name": "stevenshonorpledge",
-        "desc": "A typeracing website for our school's honor pledge. A great tool to deduce Stevens impostors (ඞ). Why, you ask? Why not?",
+        "desc": "A typeracing website for our school's honor pledge and a great tool to deduce Stevens impostors (ඞ). Why, you ask? Why not? Also a memorable introduction to web security and xss attacks as politely demonstrated by my peers on the leaderboard.",
         "image": "honor_pledge.webp",
         "link": "https://stevenshonorpledge.web.app/",
         "repo": "",
