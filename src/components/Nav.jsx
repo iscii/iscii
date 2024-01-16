@@ -15,7 +15,7 @@ function Nav() {
 	}, [location.pathname]);
 
 	return (
-		<nav className='sticky top-0 px-24 z-40 flex flex-row justify-between items-center h-24 bg-white'>
+		<nav className='sticky z-40 flex flex-row bg-white md:top-0 md:justify-between md:items-center md:h-24'>
 			<div className="flex flex-row justify-start">
 				<Link to='/'><div>Issac</div></Link>
 			</div>

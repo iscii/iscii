@@ -27,7 +27,7 @@ function Projects() {
 	}, []);
     
     return (
-        <div className='px-24'>
+        <div>
             {projects}
         </div>
     );

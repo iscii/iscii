@@ -17,7 +17,7 @@ function Featured(props) {
 	
 	return (
 		// might be able to make this, experiences, and projects (header + content) into its own component
-		<div className='px-24'>
+		<div>
 			<Header opaque={bioHidden}>Featured Projects</Header>
 			<HeadedContent id='featured'>
 				{featuredProjects}

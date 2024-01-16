@@ -5,7 +5,7 @@ function Skills(props) {
     const {bioHidden} = props;
 
 	return (
-        <div className='px-24'>
+        <div>
             <Header opaque={bioHidden}>Skills</Header>
             <HeadedContent id='skills'>
                 {/* make this prettier with icons n colors pls */}

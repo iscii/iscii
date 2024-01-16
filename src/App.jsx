@@ -12,11 +12,11 @@ import ScrollToAnchor from "./components/utilities/ScrollToAnchor";
 function App() {
 	return (
         // can create a new div for format if i ever want to use empty space. can move into a component that defines structure of page and wraps other components.
-        <div className="grid grid-cols-12 w-full h-full">
-            <div className="col-start-3 col-span-8">
+        <div className="md:grid md:grid-cols-12 w-full h-full">
+            <div className="md:col-start-3 md:col-span-8 px-6 md:px-24">
                 {/* <ContextProvider> */}
-                    <Nav />
                     <ScrollToAnchor />
+                    <Nav />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/projects" element={<Projects />} />
