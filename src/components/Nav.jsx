@@ -17,10 +17,10 @@ function Nav() {
 
 	return (
 		<>
-			<div className='md:hidden'>
+			<div className='md:hidden absolute top-4 right-4 z-50'>
 				<Hamburger toggled={openTab} toggle={setOpenTab} />
 			</div>
-			<nav className='z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly sticky p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full'>
+			<nav className='z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly absolute p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full'>
 				<div className="hidden md:flex md:flex-row md:justify-start">
 					<Link to='/'><div>Issac</div></Link>
 				</div>
