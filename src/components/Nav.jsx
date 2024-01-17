@@ -4,6 +4,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import resume from '../assets/resume.pdf';
 import NavTab from './subcomponents/NavTab';
 import SubTab from './subcomponents/SubTab';
+import Hamburger from "hamburger-react";
 
 function Nav() {
 	const location = useLocation();
@@ -15,37 +16,45 @@ function Nav() {
 	}, [location.pathname]);
 
 	return (
-		<nav className='sticky z-40 flex flex-row bg-white md:top-0 md:justify-between md:items-center md:h-24'>
-			<div className="flex flex-row justify-start">
-				<Link to='/'><div>Issac</div></Link>
+		<>
+			<div className='md:hidden'>
+				<Hamburger toggled={openTab} toggle={setOpenTab} />
 			</div>
-			<div className="grid grid-rows-3 w-1/2 h-full text-sm">
-				<div className='grid row-start-2 row-span-1 grid-cols-6'>
-					<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]}>Home</NavTab>
-					<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]}>Projects</NavTab>
-					<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
+			<nav className='z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly sticky p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full'>
+				<div className="hidden md:flex md:flex-row md:justify-start">
+					<Link to='/'><div>Issac</div></Link>
 				</div>
-				{   openTab == 1 &&
-					<div className='grid row-start-3 row-span-1 grid-cols-6'>
-						<SubTab col={1} link='/#about'>About</SubTab>
-						<SubTab col={2} link='/#featured'>Featured</SubTab>
-						{/* <SubTab col={3} link='/#skills'>Skills</SubTab> */}
+				<div className="flex flex-col justify-center md:justify-start h-full w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
+					<div className='flex flex-col justify-evenly items-start h-1/2 w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
+						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]}>Home</NavTab>
+						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]}>Projects</NavTab>
+						<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
 					</div>
-				}
-				{	openTab == 2 &&
-					<div className='grid row-start-3 row-span-1 grid-cols-6'>
-						<SubTab col={1} link='/projects/#websites'>Websites</SubTab>
-						<SubTab col={2} link='/projects/#games'>Games</SubTab>
-						<SubTab col={3} link='/projects/#programs'>Programs</SubTab>
-						<SubTab col={4} link='/projects/#webgames'>Web Games</SubTab>
+					<div className='hidden md:grid md:row-start-3 md:row-span-1 md:grid-cols-6'>
+					{/* IDEA: similar to novalauncher, make side scrollable nav for subtabs */}
+					{   openTab == 1 &&
+						<>
+							<SubTab col={1} link='/#about'>About</SubTab>
+							<SubTab col={2} link='/#featured'>Featured</SubTab>
+							{/* <SubTab col={3} link='/#skills'>Skills</SubTab> */}
+						</>
+					}
+					{	openTab == 2 &&
+						<>
+							<SubTab col={1} link='/projects/#websites'>Websites</SubTab>
+							<SubTab col={2} link='/projects/#games'>Games</SubTab>
+							<SubTab col={3} link='/projects/#programs'>Programs</SubTab>
+							<SubTab col={4} link='/projects/#webgames'>Web Games</SubTab>
+						</>
+					}
 					</div>
-				}
-			</div>
-			<div className='flex flex-row justify-end'>
-				<a href='https://github.com/iscii' target="_blank" rel="noopener noreferrer"><FaGithub size={35}/></a>
-				<a href='https://www.linkedin.com/in/issacz/' target="_blank" rel="noopener noreferrer"><FaLinkedin className="ml-5" size={35}/></a>
-			</div>
-		</nav>
+				</div>
+				<div className='relative bottom-0 flex flex-row justify-center md:justify-end'>
+					<a href='https://github.com/iscii' target="_blank" rel="noopener noreferrer"><FaGithub size={35}/></a>
+					<a href='https://www.linkedin.com/in/issacz/' target="_blank" rel="noopener noreferrer"><FaLinkedin className="ml-5" size={35}/></a>
+				</div>
+			</nav>
+		</>
 	);
 };
 
