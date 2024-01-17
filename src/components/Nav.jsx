@@ -9,6 +9,7 @@ import Hamburger from "hamburger-react";
 function Nav() {
 	const location = useLocation();
 	const [openTab, setOpenTab] = useState(1);
+	const [openMenu, setOpenMenu] = useState(false);
 	const tabMap = useRef({'/': 1, 'projects': 2});
 	
 	useEffect(() => {
@@ -17,15 +18,16 @@ function Nav() {
 
 	return (
 		<>
-			<div className='md:hidden absolute top-4 right-4 z-50'>
-				<Hamburger toggled={openTab} toggle={setOpenTab} />
+			<div className='md:hidden duration-200 transition-opacity ease-in-out w-svw h-svh fixed bg-white z-30 -ml-6' style={{visibility: openMenu ? 'visible' : 'hidden', opacity: openMenu ? '.5' : '0'}} onClick={() => setOpenMenu(!openMenu)}></div>
+			<div className='md:hidden sticky top-4 ml-auto w-fit z-50'>
+				<Hamburger toggled={openMenu} toggle={setOpenMenu}/>
 			</div>
-			<nav className='z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly absolute p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full'>
+			<nav className={`${!openMenu ? 'translate-x-full md:translate-x-0' : ''} duration-200 z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly fixed md:sticky p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full`}>
 				<div className="hidden md:flex md:flex-row md:justify-start">
 					<Link to='/'><div>Issac</div></Link>
 				</div>
-				<div className="flex flex-col justify-center md:justify-start h-full w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
-					<div className='flex flex-col justify-evenly items-start h-1/2 w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
+				<div className="flex flex-col justify-center items-center md:justify-start h-full w-full md:w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
+					<div className='flex flex-col justify-evenly items-center h-1/2 w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
 						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]}>Home</NavTab>
 						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]}>Projects</NavTab>
 						<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>

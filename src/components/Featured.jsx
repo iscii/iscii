@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { FaAngleDoubleDown } from 'react-icons/fa';
 import Header from './subcomponents/Header';
 import HeadedContent from './subcomponents/HeadedContent';
 import ProjectCard from './subcomponents/ProjectCard';
@@ -18,10 +19,10 @@ function Featured(props) {
 	return (
 		// might be able to make this, experiences, and projects (header + content) into its own component
 		<div>
-			<Header opaque={bioHidden}>Featured Projects</Header>
+			<Header opaque={bioHidden}>Featured Projects <FaAngleDoubleDown className='inline'/></Header>
 			<HeadedContent id='featured'>
 				{featuredProjects}
-				<div className='mb-10'>
+				<div className='my-10'>
 					Wanna see more projects? Head <Link to='/projects' className='underline'>here</Link>!
 				</div>
 			</HeadedContent>

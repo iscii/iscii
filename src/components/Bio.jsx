@@ -5,7 +5,7 @@ function Bio(props) {
     const { bioOpacity } = props;
 
 	return (
-		<div id="about" className='sticky top-0 md:top-24 pt-12 z-0 flex flex-row-reverse justify-between' style={{ opacity: bioOpacity }}>
+		<div id="about" className='sticky top-0 md:top-24 md:pt-12 z-0 flex flex-row-reverse justify-between' style={{ opacity: bioOpacity }}>
             <div className='relative w-full flex flex-col md:flex-row md:items-start items-center'>
                 <div className='top-0'>
                     <div className='mb-4'>

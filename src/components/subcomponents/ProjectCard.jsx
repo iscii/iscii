@@ -4,7 +4,7 @@ function ProjectCard(props) {
     const {name, desc, image, link, repo, category} = props;
 
 	return (
-		<div className='relative flex flex-col md:flex-row justify-start py-10 min-h-60 h-auto md:h-96 border-b-2 last-of-type:border-0'>
+		<div className='relative flex flex-col md:flex-row justify-start py-10 min-h-60 h-auto md:h-96 border-b-2 first-of-type:pt-0 last-of-type:border-0'>
             <h3 className="md:hidden text-xl mb-5">{name}</h3>
             <a href={link} className='md:my-auto' target='_blank' rel='noopener noreferrer'>
                 <img src={`/images/${category}/${image}`} width={350} alt={name} title={name}/>
