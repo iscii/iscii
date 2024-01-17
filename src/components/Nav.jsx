@@ -16,6 +16,11 @@ function Nav() {
 		setOpenTab(tabMap.current[location.pathname == '/' ? location.pathname : location.pathname.split('/')[1]]);
 	}, [location.pathname]);
 
+	// prevent scrolling when nav is open
+	useEffect(() => {
+		document.body.style.overflowY = openMenu ? 'hidden' : 'scroll';
+	}, [openMenu]);
+
 	return (
 		<>
 			<div className='md:hidden duration-200 transition-opacity ease-in-out w-svw h-svh fixed bg-white z-30 -ml-6' style={{visibility: openMenu ? 'visible' : 'hidden', opacity: openMenu ? '.5' : '0'}} onClick={() => setOpenMenu(!openMenu)}></div>
@@ -27,7 +32,7 @@ function Nav() {
 					<Link to='/'><div>Issac</div></Link>
 				</div>
 				<div className="flex flex-col justify-center items-center md:justify-start h-full w-full md:w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
-					<div className='flex flex-col justify-evenly items-center h-1/2 md:h-full w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
+					<div className='flex flex-col justify-evenly md:justify-start items-center h-1/2 md:h-full w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
 						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Home</NavTab>
 						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Projects</NavTab>
 						<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
