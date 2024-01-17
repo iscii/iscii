@@ -19,7 +19,7 @@ function Featured(props) {
 	return (
 		// might be able to make this, experiences, and projects (header + content) into its own component
 		<div>
-			<Header opaque={bioHidden}>Featured Projects <FaAngleDoubleDown className='inline'/></Header>
+			<Header opaque={bioHidden} extraClasses='mt-10'>Featured Projects <FaAngleDoubleDown className='inline'/></Header>
 			<HeadedContent id='featured'>
 				{featuredProjects}
 				<div className='my-10'>

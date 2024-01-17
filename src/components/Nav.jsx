@@ -19,7 +19,7 @@ function Nav() {
 	return (
 		<>
 			<div className='md:hidden duration-200 transition-opacity ease-in-out w-svw h-svh fixed bg-white z-30 -ml-6' style={{visibility: openMenu ? 'visible' : 'hidden', opacity: openMenu ? '.5' : '0'}} onClick={() => setOpenMenu(!openMenu)}></div>
-			<div className='md:hidden sticky top-2 ml-auto w-fit z-50'>
+			<div className='md:hidden fixed top-2 right-4 z-50'>
 				<Hamburger toggled={openMenu} toggle={setOpenMenu}/>
 			</div>
 			<nav className={`${!openMenu ? 'translate-x-full md:translate-x-0' : ''} duration-200 z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly fixed md:sticky p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full`}>
@@ -27,12 +27,12 @@ function Nav() {
 					<Link to='/'><div>Issac</div></Link>
 				</div>
 				<div className="flex flex-col justify-center items-center md:justify-start h-full w-full md:w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
-					<div className='flex flex-col justify-evenly items-center h-1/2 w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
-						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]}>Home</NavTab>
-						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]}>Projects</NavTab>
+					<div className='flex flex-col justify-evenly items-center h-1/2 md:h-full w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
+						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Home</NavTab>
+						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Projects</NavTab>
 						<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
 					</div>
-					<div className='hidden md:grid md:row-start-3 md:row-span-1 md:grid-cols-6'>
+					<div className='hidden md:grid md:row-start-3 md:row-span-1 md:grid-cols-6 md:h-full'>
 					{/* IDEA: similar to novalauncher, make side scrollable nav for subtabs */}
 					{   openTab == 1 &&
 						<>
