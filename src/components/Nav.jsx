@@ -19,7 +19,7 @@ function Nav() {
 	return (
 		<>
 			<div className='md:hidden duration-200 transition-opacity ease-in-out w-svw h-svh fixed bg-white z-30 -ml-6' style={{visibility: openMenu ? 'visible' : 'hidden', opacity: openMenu ? '.5' : '0'}} onClick={() => setOpenMenu(!openMenu)}></div>
-			<div className='md:hidden sticky top-4 ml-auto w-fit z-50'>
+			<div className='md:hidden sticky top-2 ml-auto w-fit z-50'>
 				<Hamburger toggled={openMenu} toggle={setOpenMenu}/>
 			</div>
 			<nav className={`${!openMenu ? 'translate-x-full md:translate-x-0' : ''} duration-200 z-40 bg-white top-0 right-0 w-3/4 h-svh flex flex-col justify-evenly fixed md:sticky p-12 text-4xl md:p-0 md:flex-row md:justify-between md:items-center md:h-24 md:w-full`}>
