@@ -18,6 +18,7 @@ function Nav() {
 
 	// prevent scrolling when nav is open
 	useEffect(() => {
+		console.log(openMenu);
 		document.body.style.overflowY = openMenu ? 'hidden' : 'scroll';
 	}, [openMenu]);
 
@@ -33,8 +34,8 @@ function Nav() {
 				</div>
 				<div className="flex flex-col justify-center items-center md:justify-start h-full w-full md:w-7/12 md:grid md:grid-rows-3 md:h-full md:text-sm">
 					<div className='flex flex-col justify-evenly md:justify-start items-center h-1/2 md:h-full w-full md:grid md:row-start-2 md:row-span-1 md:grid-cols-6'>
-						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Home</NavTab>
-						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]} openMenuState={[openMenu, setOpenMenu]}>Projects</NavTab>
+						<NavTab col={1} link='/' openTabState={[openTab, setOpenTab]} openMenuState={[setOpenMenu]}>Home</NavTab>
+						<NavTab col={2} link='/projects' openTabState={[openTab, setOpenTab]} openMenuState={[setOpenMenu]}>Projects</NavTab>
 						<NavTab col={3} link={resume} target='_blank'>Resume</NavTab>
 					</div>
 					<div className='hidden md:grid md:row-start-3 md:row-span-1 md:grid-cols-6 md:h-full'>
